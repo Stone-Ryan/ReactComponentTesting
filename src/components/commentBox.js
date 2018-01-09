@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export default class CommentBox extends Component {
+class CommentBox extends Component {
   constructor(props){
     super(props);
 
@@ -31,3 +31,5 @@ export default class CommentBox extends Component {
     )
   }
 };
+
+export default connect()(CommentBox);
