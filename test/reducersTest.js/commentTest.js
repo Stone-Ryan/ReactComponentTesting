@@ -3,7 +3,7 @@ import { expect } from '../test_helper';
 import commentReducer from '../../src/reducers/commentReducer';
 import { SAVE_COMMENT } from '../../src/actions/types';
 
-describe('Comments Reducer', () => {
+describe('Comment Reducer', () => {
   it('handles action with unknown type', () => {
     expect(commentReducer([], {})).to.eql([]);
   });
